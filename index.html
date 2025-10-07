@@ -219,127 +219,161 @@
     <script>
         // Array de 30 adivinanzas con sus respuestas (puedes añadir más)
         const riddles = [
-            {
-                riddle: "¿Qué tiene ciudad, pero no casa; tiene monte, pero no árbol; tiene agua, pero no pez?",
-                answers: ["mapa", "elmapa"]
-            },
-            {
-                riddle: "En el campo me crie, dando voces como loca. Me ataron de pies y manos, para quitarme la ropa.",
-                answers: ["campana", "lacampana"]
-            },
-            {
-                riddle: "Blanco por dentro, verde por fuera. Si quieres que te lo diga, espera.",
-                answers: ["pera", "lapera"]
-            },
-            {
-                riddle: "Tiene dientes y no come, tiene cabeza y no es hombre.",
-                answers: ["ajo", "elajo", "diente de ajo", "cabeza de ajo", "un ajo"]
-            },
-            {
-                riddle: "Vuela sin alas, habla sin boca, pero hace mucho ruido.",
-                answers: ["eco", "eleco", "el eco"]
-            },
-            {
-                riddle: "Llevo mi casa al hombro, camino sin patas y voy marcando mi rastro con un hilo de plata.",
-                answers: ["caracol", "elcaracol"]
-            },
-            {
-                riddle: "Tengo hojas y no soy árbol, tengo lomo y no soy caballo.",
-                answers: ["libro", "ellibro"]
-            },
-            {
-                riddle: "Me quitan la ropa, me voy a la cama, y de mi se habla, sin parar la semana.",
-                answers: ["calendario", "elcalendario"]
-            },
-            {
-                riddle: "Canto en la orilla, vivo en el agua, no soy pescado, ni soy cigarra.",
-                answers: ["rana", "larana"]
-            },
-            {
-                riddle: "Siempre va por delante, nunca mira atrás, y se llama como tu la llamas.",
-                answers: ["calle", "lacalle"]
-            },
-            {
-                riddle: "Sin ser sastre, tengo aguja; y sin ser músico, doy notas.",
-                answers: ["reloj", "elreloj"]
-            },
-            {
-                riddle: "Soy una cosa redonda, que no tiene principio ni fin.",
-                answers: ["anillo", "elanillo", "circulo", "elcirculo"]
-            },
-            {
-                riddle: "Cuanto más caliente, más fresco y crujiente.",
-                answers: ["pan", "elpan"]
-            },
-            {
-                riddle: "No muge ni grita, pero te da leche blanca y gordita.",
-                answers: ["vaca", "lavaca"]
-            },
-            {
-                riddle: "Soy pequeño y de metal, y puedo abrir o cerrar el portal.",
-                answers: ["llave", "lallave"]
-            },
-            {
-                riddle: "De día duermo, de noche cazo. Tengo garras y no soy un brazo.",
-                answers: ["buho", "elbuho", "lechuzas", "lalechuza"]
-            },
-            {
-                riddle: "Aunque tengo patas, no puedo andar, y aunque tengo espalda, no puedo hablar.",
-                answers: ["silla", "lasilla", "butaca", "labutaca", "asiento", "elasiento"]
-            },
-            {
-                riddle: "Dos hermanas son, la una va y la otra viene, y al final siempre se encuentran.",
-                answers: ["horas", "lashoras", "manecillas", "lasmanecillas"]
-            },
-            {
-                riddle: "Me puedes tomar, pero nunca me puedes levantar.",
-                answers: ["fotografia", "lafotografia"]
-            },
-            {
-                riddle: "Tengo un solo ojo, y sin embargo, no puedo ver.",
-                answers: ["aguja", "laaguja"]
-            },
-            {
-                riddle: "Me sacan a la mesa, me cortan y me reparten, pero no me comen.",
-                answers: ["baraja", "labaraja", "cartas", "lascartas"]
-            },
-            {
-                riddle: "Una señora muy aseñorada, con muchos volantes y ninguna puntada.",
-                answers: ["col", "lacol"]
-            },
-            {
-                riddle: "Somos muchos hermanos, vivimos en una cueva, y si nos frotan, nos encendemos.",
-                answers: ["fosforo", "fosforos", "losfosforos"]
-            },
-            {
-                riddle: "No tengo boca, pero hago ruido. No tengo alas, pero vuelo. No tengo cuerpo, pero a veces lloro.",
-                answers: ["viento", "elviento"]
-            },
-            {
-                riddle: "En la cara tengo dos, en los brazos tengo diez.",
-                answers: ["letras", "lasletras", "vocales", "lasvocales"]
-            },
-            {
-                riddle: "Puedo ser corto o largo, y siempre acabo con una interrogación.",
-                answers: ["chiste", "elchiste"]
-            },
-            {
-                riddle: "Mientras más me pides, más te dejo atrás.",
-                answers: ["tiempo", "eltiempo"]
-            },
-            {
-                riddle: "Me alimento del sol, me visto de verde, y mi corazón es de madera.",
-                answers: ["arbol", "elarbol"]
-            },
-            {
-                riddle: "Tengo cinco dedos, pero no tengo vida.",
-                answers: ["guante", "elguante"]
-            },
-            {
-                riddle: "Con cabeza y con pies, conmigo te vas a la cama.",
-                answers: ["pijama", "elpijama"]
-            }
-        ];
+    // 🐾 Animales
+    {
+        riddle: "Vuelo de noche, duermo de día, y nunca verás plumas en ala mía.",
+        answers: ["murcielago", "elmurcielago"]
+    },
+    {
+        riddle: "Salto y salto y no tengo patas, croo en el agua y vivo en casa.",
+        answers: ["rana", "larana"]
+    },
+    {
+        riddle: "Tengo melena, soy fuerte y rugo en la arena.",
+        answers: ["leon", "elleon"]
+    },
+    {
+        riddle: "Camino despacio, mi casa llevo, y si me tocas, me escondo luego.",
+        answers: ["caracol", "elcaracol"]
+    },
+    {
+        riddle: "Soy blanco o negro, vivo en el frío y pesco mi comida.",
+        answers: ["pinguino", "elpinguino"]
+    },
+
+    // 💻 Informática
+    {
+        riddle: "Sin ser humano, tengo memoria y cerebro electrónico.",
+        answers: ["computadora", "lacomputadora", "ordenador", "elordenador"]
+    },
+    {
+        riddle: "Tengo teclas pero no abro puertas.",
+        answers: ["teclado", "elteclado"]
+    },
+    {
+        riddle: "Tengo pantalla pero no cara, y muestro lo que tú me indicas.",
+        answers: ["monitor", "elmonitor", "pantalla", "lapantalla"]
+    },
+    {
+        riddle: "Soy pequeño y tengo cola, pero no soy un animal.",
+        answers: ["raton", "elraton", "mouse", "elmause"]
+    },
+    {
+        riddle: "Guardo tus fotos y archivos, pero no soy caja ni armario.",
+        answers: ["usb", "memoriausb", "lamemoria", "pendrive"]
+    },
+
+    // 🌿 Naturaleza
+    {
+        riddle: "Soy redonda y doy luz, aunque no soy el sol.",
+        answers: ["luna", "laluna"]
+    },
+    {
+        riddle: "Caigo del cielo y mojo la tierra, pero no soy nieve.",
+        answers: ["lluvia", "lalluvia"]
+    },
+    {
+        riddle: "Me ves una vez al día, y al llegar la noche desaparezco.",
+        answers: ["sol", "elsol"]
+    },
+    {
+        riddle: "Verde nací, verde viví, y del fuego color perdí.",
+        answers: ["hoja", "lahoja"]
+    },
+    {
+        riddle: "Soy fuerte como un gigante y doy sombra en el instante.",
+        answers: ["arbol", "elarbol"]
+    },
+
+    // 🏠 Objetos del hogar
+    {
+        riddle: "Sin boca hablo, sin alas vuelo, y te cuento lo que veo.",
+        answers: ["telefono", "eltelefono"]
+    },
+    {
+        riddle: "Tengo ojos de vidrio y miro sin ver.",
+        answers: ["ventana", "laventana"]
+    },
+    {
+        riddle: "Tiene patas pero no camina, y sirve para descansar.",
+        answers: ["silla", "lasilla"]
+    },
+    {
+        riddle: "Guardo la comida y la mantengo fría.",
+        answers: ["refrigerador", "nevera", "larefrigeradora"]
+    },
+    {
+        riddle: "Tengo cama pero no duermo, corro y nunca camino.",
+        answers: ["rio", "elrio"]
+    },
+
+    // 🎒 Escuela y estudio
+    {
+        riddle: "Tiene hojas pero no es árbol.",
+        answers: ["libro", "ellibro"]
+    },
+    {
+        riddle: "Guardo lápices, colores y más, y a la escuela siempre me llevarás.",
+        answers: ["mochila", "lamochila"]
+    },
+    {
+        riddle: "Tiene muchas letras, pero no sabe leer.",
+        answers: ["teclado", "elteclado"]
+    },
+    {
+        riddle: "Guardo lo que aprendes día a día, pero no soy libreta ni guía.",
+        answers: ["memoria", "lamemoria"]
+    },
+    {
+        riddle: "Sin tinta y sin papel, escribo lo que tú quieras ver.",
+        answers: ["pantalla", "lapantalla"]
+    },
+
+    // 🚗 Transporte y cosas varias
+    {
+        riddle: "Cuatro ruedas tengo y camino sin pies.",
+        answers: ["auto", "elauto", "carro", "elcarro"]
+    },
+    {
+        riddle: "Vuelo sin plumas, sin alas, sin motor, y llevo mensajes con gran valor.",
+        answers: ["avion", "elavion"]
+    },
+    {
+        riddle: "Por el cielo voy corriendo, sin tener patas ni pies.",
+        answers: ["nube", "lanube"]
+    },
+    {
+        riddle: "Lleno el cielo de colores después de la lluvia.",
+        answers: ["arcoiris", "elarcoiris"]
+    },
+    {
+        riddle: "Soy redondo como el sol, pero brillo de noche sin calor.",
+        answers: ["luna", "laluna"]
+    },
+    // 🔢 Matemáticas
+
+    {
+        riddle: "Si me multiplicas por mí, sigo siendo yo. ¿Quién soy?",
+        answers: ["uno", "eluno", "1"]
+    },
+    {
+        riddle: "Soy la mitad de cien, y si me sumas con diez, valgo sesenta.",
+        answers: ["cincuenta", "elcincuenta", "50"]
+    },
+    {
+        riddle: "Cuatro patas tengo, y en los números me verás, soy un cuadrado al girar.",
+        answers: ["cuatro", "elcuatro", "4"]
+    },
+    {
+        riddle: "No tengo principio ni fin, y en matemáticas soy muy útil.",
+        answers: ["circulo", "elcirculo"]
+    },
+    {
+        riddle: "Divido sin partir, multiplico sin sumar, y en los problemas siempre estoy.",
+        answers: ["numero", "elnúmero", "numeros", "losnumeros"]
+    }
+];
+
 
         let currentRiddle = null;
         let availableRiddles = [];
